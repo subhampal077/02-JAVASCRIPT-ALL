@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Inika;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(222, 205, 172, 1);
+}
+
+.button {
+    position: absolute;
+    top: 20px;
+}
+
+.main-container {
+    padding: 60px;
+    max-width: 690px;
+    width: 100%;
+    /* min-height: 340px; */
+    border-radius: 32px;
+    background-color: rgba(254, 250, 243, 1);
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: -150px;
+    left: -310px;
+    /* margin-inline: auto; */
+    /* display: none; */
+    transform: translate(0, 0) scale(0);
+    transition: all 0.25s ease-in-out;
+}
+
+h1 {
+    line-height: 52px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cactus-image {
+    position: absolute;
+    left: 60px;
+    top: -34px;
+}
+
+/* .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+} */
+
+.main-container h1,
+p {
+    margin-left: 276px;
+}
+
+.main-container p {
+    text-align: end;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.popup-opened .main-container {
+    /* display: flex; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-opened .button {
+    display: none;
+}
+
+/* .popup-opened .overlay {
+    display: block;
+} */
+
+.popup-opened {
+    background-color: rgb(155, 143, 120);
+}
+
+
+.main-container>img {
+    max-width: 210px;
+    width: 100%;
+    height: 210px;
+}
+
+.close-icon {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(175, 161, 135, 1);
+    margin-right: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 560px;
+    height: 56px;
+    background-color: rgba(175, 161, 135, 1);
+    border-radius: 28px;
+    margin-top: 56px;
+    padding-left: 28px;
+}
+
+.email-container form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 240px;
+}
+
+.email-container input {
+    
+}

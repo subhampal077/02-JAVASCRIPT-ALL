@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Details</title>
+
+    <!-- google font Nunito sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./country.css" />
+
+    <script src="./country.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content">
+        <a href="/"><h2 class="title">Where in the world?</h2></a>
+        <!-- <i class="fa-solid fa-sun"></i> -->
+        <p class="theme"><i class="fa-regular fa-moon"></i>&nbsp;Dark Mode</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="country-details-container">
+        <button class="back-btn">
+          <i class="fa-solid fa-arrow-left-long"></i>&nbsp; Back
+        </button>
+
+        <div class="country-details">
+          <img class="country-details-image" src="" alt="" />
+
+          <div class="country-details-text">
+            <h2></h2>
+            <div class="details-para">
+              <div class="details-para1">
+                <p><b>Native Name: </b><span class="native-name"></span></p>
+                <p><b>Population: </b><span class="population"></span></p>
+                <p><b>Region: </b><span class="region"></span></p>
+                <p><b>Sub Region: </b><span class="sub-region"></span></p>
+                <p><b>Capital: </b><span class="capital"></span></p>
+              </div>
+              <div class="details-para2">
+                <p>
+                  <b>Top Level Domain: </b
+                  ><span class="top-level-domain"></span>
+                </p>
+                <p><b>Currencies: </b><span class="currencies"></span></p>
+                <p><b>Languages: </b><span class="languages"></span></p>
+              </div>
+            </div>
+
+            <div class="border-countries-container">
+              <b>Border Countries:</b>
+              <div class="border-countries"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

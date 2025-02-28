@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+}
+
+main {
+  height: 100dvh;
+  background-color: rgba(246, 240, 235, 1);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-inline: 24px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 96px;
+  backdrop-filter: blur(8px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1450px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  gap: 60px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(73, 33, 24, 1);
+}
+
+.close-menu {
+  display: none;
+}
+
+.hamburger-container {
+  width: 46px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  display: none;
+}
+
+.hamburger-menu {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: -62px;
+  right: -56px;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+}
+
+.hamburger-icon {
+  font-size: 14px;
+  font-weight: 550;
+  position: absolute;
+  top: 67px;
+  right: 67px;
+  cursor: pointer;
+}
+
+.home-section {
+  padding-inline: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section img {
+  max-width: 1400px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.home-section p {
+  font-size: 24px;
+  color: rgba(73, 33, 24, 1);
+  margin-bottom: 32px;
+}
+
+.nav-image-container {
+  padding-inline: 96px;
+  padding-bottom: 42px;
+}
+
+.image-section {
+  padding-top: 66px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  align-items: center;
+}
+
+.image-section > img {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.image-section > h2 {
+  font-size: 36px;
+}
+
+.go-to-top {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.go-to-top {
+  color: rgb(206, 66, 2);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.end-section {
+  padding-bottom: 36px;
+}
+
+.made-by {
+  color: rgba(133, 133, 133, 1);
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 36px;
+}
+
+@media (max-width: 1200px) {
+  .nav a {
+    font-size: 16px;
+  }
+
+  .nav {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav a {
+    font-size: 12px;
+  }
+
+  .nav {
+    gap: 36px;
+  }
+
+  header {
+    padding-block: 14px;
+    margin-bottom: 86px;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 50px;
+  }
+
+  .home-section {
+    padding-inline: 24px;
+  }
+
+  .nav-image-container {
+    padding-inline: 84px;
+    padding-bottom: 42px;
+  }
+
+  .home-section p {
+    font-size: 20px;
+    margin-bottom: 64px;
+  }
+
+  .image-section {
+    padding-top: 88px;
+  }
+
+  .end-section {
+    padding-bottom: 36px;
+  }
+
+  .go-to-top {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+    background-color: rgba(246, 240, 235, 0.6);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 34px;
+  }
+
+  .nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffffd9;
+    right: -240px;
+    top: 0px;
+    padding: 25px 20px;
+    width: 200px;
+    /* display: none; */
+    transition: right 0.2s ease-in-out;
+  }
+
+  .nav-open .nav {
+    /* display: flex; */
+    right: 0px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    color: rgba(73, 33, 24, 1);
+    right: 15px;
+    top: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger-container {
+    display: block;
+  }
+
+  .nav-open .hamburger-container {
+    display: none;
+  }
+
+  .home-section {
+    padding-inline: 36px;
+  }
+
+  .home-section > img {
+    padding-bottom: 0;
+  }
+
+  .home-section > p {
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 0px;
+  }
+
+  .nav-image-container {
+    padding-inline: 44px;
+    padding-bottom: 16px;
+  }
+
+  .image-section {
+    gap: 20px;
+    padding-top: 68px;
+  }
+
+  .image-section h2 {
+    font-size: 14px;
+  }
+
+  .end-section {
+    padding-bottom: 36px;
+  }
+
+  .go-to-top {
+    margin-top: 0;
+  }
+}

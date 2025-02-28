@@ -1,0 +1,22 @@
+
+.container {
+    color: blueviolet;
+}
+  
+
+.card {
+    width: 60px;
+    height: 70px;
+    font-size: 40px;
+    font-family: cursive;
+    border-radius: 4px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: cursive;
+}

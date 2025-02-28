@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events</title>
+
+    <style>
+        h1 {
+            background-color: chocolate;
+        }
+      .container {
+        color: red;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .card {
+        height: 100px;
+        width: 80px;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        border-radius: 8px;
+      }
+      .add-card {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+        background-color: chartreuse;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+    </style>
+
+    <script src="./54-mouse-events.js" defer></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1 draggable="true">Adding Event Listener</h1>
+
+    <div class="container">
+      <div class="card add-card"><span style="background-color: blue;">+</span></div>
+    </div>
+  </body>
+</html>

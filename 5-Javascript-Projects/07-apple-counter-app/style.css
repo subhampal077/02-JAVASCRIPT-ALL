@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button {
+    cursor: pointer;
+}

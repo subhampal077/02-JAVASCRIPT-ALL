@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST Countries</title>
+
+    <!-- google font Nunito sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content">
+        <a href="/"><h2 class="title">Where in the world?</h2></a>
+        <!-- <i class="fa-solid fa-sun"></i> -->
+        <p class="theme"><i class="fa-regular fa-moon"></i>&nbsp; Dark Mode</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="search-filter-container">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="" type="text" placeholder="Search for a country name" />
+        </div>
+
+        <select>
+          <option value="" hidden>Filter By Region</option>
+          <option value="all">All</option>
+          <option value="africa">Africa</option>
+          <option value="americas">Americas</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </div>
+
+      <div class="countries-container">
+        <!-- <a href="" class="country-card">
+          <img
+            class="country-img"
+            src="https://flagcdn.com/gs.svg"
+            alt="countryflag"
+          />
+          <h2 class="country-name">INDIA</h2>
+          <div class="country-text">
+            <p><b>Population: </b> 1000</p>
+            <p><b>Region: </b>ASIA</p>
+            <p><b>Capital: </b>NEW DELHI</p>
+          </div>
+        </a> -->
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+
+    <style>
+        h1 {
+            max-width: 1500px;
+            width: 80%;
+            background-color: chocolate;
+        }
+      .container {
+        color: red;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .card {
+        height: 100px;
+        width: 80px;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        border-radius: 8px;
+      }
+      .add-card {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: blue;
+        top: 12px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+        background-color: chartreuse;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+    </style>
+
+    <script src="./57-event-delegation.js" defer></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1>Event Delegation</h1>
+
+    <div class="container">
+      <div class="add-card">+</div>
+    </div>
+
+  </body>
+</html>

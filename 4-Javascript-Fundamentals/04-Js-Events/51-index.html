@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+    <style>
+        .container {
+            color: red;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .card {
+            height: 100px;
+            width: 80px;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-radius: 8px;
+        }
+        .add-card {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            border-radius: 100%;
+        }
+    </style>
+
+    <script src="./51-event-listener.js" defer></script>
+</head>
+<body style="font-family: cursive;">
+
+    <h1 onclick = "console.log('Header Clicked!!!')">Adding Event Listener</h1>
+
+    <div class="container">
+
+        <div onclick = "clickBtn()" class="card">1</div>
+
+        <div class="card" ondblclick = "console.log('Double clicked!!!')">2</div>
+
+        <div class="card card3">3</div>
+
+        <div class="card card4">4</div>
+
+        <div class="card card5">5</div>
+
+        <div class="card add-card">+</div>
+
+    </div>
+</body>
+</html>
