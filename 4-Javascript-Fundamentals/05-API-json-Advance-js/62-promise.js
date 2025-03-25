@@ -22,7 +22,7 @@ const p1 = new Promise((resolve, reject) => {
     setTimeOutResolveBtn.addEventListener("click", () => {
         setTimeout(() => {
             resolve("p1 Promise Resolved!!");
-            console.log(p1);   // 3sec after click on the resolveBtn p1 is in fulfilled state
+            console.log(p1);   // 2sec after click on the resolveBtn p1 is in fulfilled state
         }, 2000);
     });
 });
