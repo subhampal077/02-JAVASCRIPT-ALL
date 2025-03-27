@@ -106,6 +106,30 @@ console.log(myFruits);  // O/P = ['Mango', 'Apple', 'Orange', 'Banana']
 
 // -------------------------------------
 
-// To copy nested OBJECT and multidimensional ARRAY we have use DEEP COPY will learn later
+// To copy nested OBJECT and multidimensional ARRAY we have use DEEP COPY
 
+// 1. Using structuredClone() (Best & Recommended)
+// ES2021 introduced structuredClone(), which performs a native deep copy efficiently.
+
+const obj = { a: 1, b: { c: 2 } };
+const deepCopy = structuredClone(obj);
+
+deepCopy.b.c = 100;
+
+console.log(obj.b.c); // 2 (original object remains unchanged)
+console.log(deepCopy.b.c); // 100
+
+
+// 2. Using JSON Methods (Simple but Limited)
+// JSON.stringify() + JSON.parse() creates a deep copy but removes functions, undefined, and special types (like Date, Map, Set).
+
+// ✅ Best for: Simple data structures (no functions, Date, Map, Set, etc.)
+
+const obj = { a: 1, b: { c: 2 } };
+const deepCopy = JSON.parse(JSON.stringify(obj));
+
+deepCopy.b.c = 100;
+
+console.log(obj.b.c); // 2 (original remains unchanged)
+console.log(deepCopy.b.c); // 100
 
