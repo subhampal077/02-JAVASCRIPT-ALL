@@ -82,5 +82,3 @@ const multiply = (...arg)=> {
   
   multiply(2,2,2,2,2);
   
-
-  
