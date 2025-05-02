@@ -89,7 +89,6 @@ user3.fullName();
 console.log("----------------->>>>>>>>>>>>");
 
 // this for class
-
 class User {
   constructor() {
     (this.name = "Subham Pal"), console.log(this); // points to returned (User)object
