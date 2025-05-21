@@ -55,5 +55,4 @@ addCard.addEventListener("click", ()=> {
     container.append(newCard);
 })
 
-
 // ended  //
