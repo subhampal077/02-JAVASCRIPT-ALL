@@ -29,4 +29,4 @@ container.addEventListener("click", (e) => {
 
 // END //
 
-// Instead of adding event listener to every element if we add event listener to direct parent and use it. then this process is called event delegation..
+// Instead of adding event listener to every element if we add event listener to direct parent and use it. then this process is called event delegation.
