@@ -40,6 +40,5 @@ console.log(user2.getFullName?.());  // undefined if the function not present in
 
 //  here if user2.getFullName exists then only it calls the function and return the value subham pal, otherwise it returns the value of user2.getFullName = undefined
 
-
 // console.log(user2.getFullAddress?.());  
 // TypeError: user2.getFullAddress is not a function
