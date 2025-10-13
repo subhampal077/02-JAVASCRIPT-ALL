@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dates in JS part2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <script src="./78-script.js" defer></script>
+  </head>
+  <body>
+    <h1 style="margin-block: 40px; text-align: center">
+      Timestamp Calculator
+    </h1>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+        max-width: 90%;
+        margin: auto;
+      "
+    >
+      <div style="max-width: 300px">
+        <h3 style="margin-bottom: 8px">The Current Epoch Unix Timestamp</h3>
+        <h4 style="margin-bottom: 8px">Enter a Timestamp</h4>
+        <input
+          id="input-milliseconds"
+          style="margin-bottom: 8px; padding: 8px 16px; width: 100%"
+          type="number"
+          placeholder="Enter time in ms"
+        />
+        <p style="margin-bottom: 8px">
+          Supports Unix timestamps in milliseconds.
+        </p>
+        <button
+          id="button"
+          style="
+            margin-bottom: 8px;
+            padding: 8px 16px;
+            background-color: aquamarine;
+          "
+        >
+          Convert
+        </button>
+      </div>
+
+      <div>
+        <h1 id="get-time" style="margin-bottom: 8px"></h1>
+        <h4 style="margin-bottom: 8px">SECONDS SINCE JAN 01 1970. (UTC)</h4>
+        <h4 id="locale-time" style="margin-bottom: 8px"></h4>
+      </div>
+    </div>
+
+    <div
+      id="value-table"
+      style="
+        border: 1px solid;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin-inline: auto;
+        margin-top: 40px;
+        display: none;
+      "
+    >
+      <div style="border-right: 1px solid">
+        <p style="padding: 16px; min-height: 52px">Format</p>
+        <p style="border-top: 1px solid; padding: 16px; min-height: 52px">
+          GMT
+        </p>
+        <p style="border-top: 1px solid; padding: 16px; min-height: 52px">
+          Your Time Zone
+        </p>
+      </div>
+
+      <div style="flex-grow: 1">
+        <p style="padding: 16px; min-height: 52px">MilliSeconds</p>
+        <p
+          id="gmt"
+          style="border-top: 1px solid; padding: 16px; min-height: 52px"
+        ></p>
+        <p
+          id="locale-time-zone"
+          style="border-top: 1px solid; padding: 16px; min-height: 52px"
+        ></p>
+      </div>
+    </div>
+  </body>
+</html>
