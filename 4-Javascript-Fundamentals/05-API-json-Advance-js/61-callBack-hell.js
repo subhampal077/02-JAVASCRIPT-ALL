@@ -12,7 +12,6 @@
 // xhr.send();
 
 
-
 function makeHttpRequest(method, url, callBack) {
 
     const xhr = new XMLHttpRequest();
