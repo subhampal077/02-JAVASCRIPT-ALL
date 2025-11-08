@@ -21,4 +21,3 @@ makeRequest().then((data) => {
 }).catch((err) => {
     console.log(err);    // to catch the error without try-catch block
 });
-
