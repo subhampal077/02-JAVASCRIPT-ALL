@@ -10,7 +10,6 @@
 
 // -------------- EXERCISE -------------------
 
-
 // If user doesnot enter any value set defaulf value ( subham and 22 ) with the help of logical operator  (OR)
 
 
