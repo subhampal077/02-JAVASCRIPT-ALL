@@ -18,4 +18,3 @@ const hasJob = true;
 const muNull = null;
 const myUndefined = undefined;
 const myEmptyString = "" ;
-
