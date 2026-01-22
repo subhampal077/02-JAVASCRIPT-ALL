@@ -19,8 +19,3 @@ console.log(result1);
 
 const result2 = null ? 'hey' : '' ? '12' : 0   // return 0 coz '' emplty string is a falsy value and null is a falsy value
 console.log(result2);
-
-
-
-
-
