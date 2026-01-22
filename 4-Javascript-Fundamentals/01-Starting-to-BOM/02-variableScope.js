@@ -99,3 +99,4 @@ var fun3 = function(){
     console.log("hi")
 }
 fun3();
+
