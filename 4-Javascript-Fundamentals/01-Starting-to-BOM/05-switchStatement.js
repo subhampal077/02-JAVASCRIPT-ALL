@@ -18,7 +18,6 @@
 //     console.log('Please Enter a Valid Day Number')
 // }
 
-
 // ------- SWITCH CASE ----------
 
 const dayNumber = 1;
