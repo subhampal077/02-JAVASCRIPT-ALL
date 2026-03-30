@@ -22,6 +22,7 @@ function makeHttpRequest(method, url) {
     return promise;
 };
 
+// code grows virtically here 
 makeHttpRequest("GET", "https://dummyjson.com/users").then((usersData) => {
     console.log(usersData.users[0].id);
     return makeHttpRequest("GET", `https://dummyjson.com/posts/user/${usersData.users[0].id}`);
@@ -37,7 +38,6 @@ makeHttpRequest("GET", "https://dummyjson.com/users").then((usersData) => {
 
 
 // fixing CallBack Hell using promise with FETCH API
-
 fetch("https://dummyjson.com/users").then((res) => {
     return res.json();
 }).then((usersData) => {
@@ -57,6 +57,7 @@ fetch("https://dummyjson.com/users").then((res) => {
 });
 
 
+// previously used example of callbackHell :
 // makeHttpRequest("GET", "https://dummyjson.com/users", (usersData) => {
 //     console.log(usersData.users[0].id);  // got the main id as an o/p
 //     makeHttpRequest("GET", `https://dummyjson.com/posts/user/${usersData.users[0].id}`, (postData) => {
