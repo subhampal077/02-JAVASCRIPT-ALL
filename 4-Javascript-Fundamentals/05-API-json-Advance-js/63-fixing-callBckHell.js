@@ -57,8 +57,6 @@ fetch("https://dummyjson.com/users").then((res) => {
 });
 
 
-
-
 // makeHttpRequest("GET", "https://dummyjson.com/users", (usersData) => {
 //     console.log(usersData.users[0].id);  // got the main id as an o/p
 //     makeHttpRequest("GET", `https://dummyjson.com/posts/user/${usersData.users[0].id}`, (postData) => {
